@@ -1,0 +1,161 @@
+* {
+  font-family: 'Lato', sans-serif;
+}
+.question-boxes {
+  display: flex;
+  border: 2px solid white;
+  margin-top: 2%;
+  padding: 2%;
+  border-radius: 50px;
+  background: rgba(255,255,255, 0.3);
+}
+#middleBox {
+  border-right: 3px solid white;
+  border-left: 3px solid white;
+}
+@media only screen and (max-width: 1000px){
+  [class*='question-boxes']{
+    display: block;
+  }
+}
+#fullApp {
+  padding: 5%;
+  margin-bottom: 5%;
+  margin-top: 10%;
+}
+
+textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 5px;
+  font-size: 1.2rem;
+}
+
+#titleArea , h1{
+  font-size: 5rem;
+}
+#full-title-section {
+    height: 90vh;
+}
+#full-title-section .button-forward{
+  background-color: white;
+}
+#mainSubtitle {
+  font-weight: 300;
+  padding-top: 10px;
+  padding-bottom: 100px;
+}
+.full-step {
+  height: 50vh;
+  margin: auto;
+  align-items: center;
+  /*background-color: #00405c;*/
+  color: black;
+  border-radius: 20px;
+  width: fit-content;
+  block-size: fit-content;
+  padding: 5% 5% 5% 5%;
+}
+.full-step h3 {
+  font-size: 3.2rem;
+  font-weight: 400;
+  margin-bottom: 4%;
+  border-bottom: 5px solid white;
+  padding-bottom: 10px;
+}
+.full-step h4 {
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+.prompt-text {
+  font-size: 1.5rem;
+
+}
+#finalStep {
+  display: none;
+}
+
+.button-forward {
+  align-self: center;
+}
+.button-next {
+  color: rgba(92, 151, 191, 1);
+}
+.button-next:hover, #restartBtn:hover {
+  color: orange;
+  transform: scale(1.2);
+}
+#firstCheck, #secondCheck, #thirdCheck {
+  padding: 0 10% 0 10%;
+}
+
+.custom-check, .form-check-input {
+  transform: scale(3.5);
+  border: 2px solid rgba(30, 81, 123, 0.8);
+  cursor: pointer;
+  margin: 30px;
+  background-color: rgb(240, 240, 240, 30%);
+  align-self: center;
+}
+.custom-check:checked, .form-check-input:checked {
+  background-color: orange;
+  border: 2px solid white;
+}
+.custom-label {
+  display: flex;
+  font-size: 1.6em;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+#restartBtn {
+  color: rgba(92, 151, 191, 1);
+}
+#stepOne {
+  background-color:  rgba(92, 151, 191, 0.2);
+  border-radius: 10px;
+}
+#stepTwo {
+  background-color:  rgba(92, 151, 191, 0.2);
+  border-radius: 10px;
+}
+#stepThree {
+  background-color:   rgba(92, 151, 191, 0.2);
+  border-radius: 10px;
+}
+#stepFour {
+  background-color:    rgba(92, 151, 191, 0.2);
+  border-radius: 10px;
+}
+#stepFive {
+  background-color:    rgba(92, 151, 191, 0.2);
+  border-radius: 10px;
+}
+#finalStep {
+  background-color: rgba(92, 151, 191, 0.2);
+  border-radius: 10px;
+}
+.button-forward {
+  background-color: white;
+  margin: 3% 0 3% 0;
+}
+.assignment-basics-box {
+  padding: 20px;
+}
+.exemplar-text {
+  font-size: 1.2rem;
+  color: rgba(30, 81, 123, 0.8);
+}
+#output {
+  background-color: white;
+  border: 1px solid black;
+  padding: 2% 5%;
+  white-space: pre-wrap;
+}
+
+#output p {
+  font-size: 1.2rem;
+}
+#output li {
+  font-size: 1.2rem;
+  list-style-type: none;
+}

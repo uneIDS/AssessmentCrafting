@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--CSS Stylesheets-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="style.css">
+    <title>Assessment Crafting Aid</title>
+  </head>
+  <body>
+    <div class="container container-fluid full" id="fullApp">
+<!--title area div-->
+      <div id="full-title-section">
+        <div class="row" id="titleArea">
+          <h1 class="text-center" id="title">Crafting<br>Assessments</h1>
+          <h2 id="mainSubtitle" class="text-center">5 steps to creating assessments that measure key skills.</h2>
+        </div>
+        <div class="row button-forward">
+          <h3 class="text-center">Get Started!</h3>
+          <a class="btn button-next" id="stepTwoBtn" href="#stepOne"><i class="fa-solid fa-angle-down fa-5x"></i></a>
+        </div>
+      </div>
+
+
+<!--step one fill in-->
+      <div class="row" id="stepOne">
+        <div class="container full-step mt-4">
+          <div class="row">
+            <h3 class="step-title text-center">
+              Step One: Draft an Objective
+            </h3>
+            <h4 class="step-question">
+              What should students be able to do at the end of the week or course?
+            </h4>
+            <p class="exemplar-text"><em>e.g. Gather information from a client using standard practice</em></p>
+        </div>
+        <hr>
+        <div class="row">
+          <p class="prompt-text">Students will be able to...</p>
+          <div class="container textbox textbox-outline">
+            <textarea name="learning-objective" id="learningObjectiveText" cols="100" rows="10" class="textbox textbox-full"></textarea>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="row button-forward">
+      <a class="btn button-next" id="stepTwoBtn" href="#stepTwo"><i class="fa-solid fa-angle-down fa-5x"></i></a>
+    </div>
+
+<!--step two fill in-->
+    <div class="row" id="stepTwo">
+      <div class="container full-step mt-4">
+        <div class="row">
+          <h3 class="step-title text-center">Step Two: Outline Assessment Basics</h3>
+          <p class="prompt-text">These three questions ensure that we make the purpose of the assessment clear to students <em><strong>and</strong></em> that we are assessing the skill(s) stated in the objective.</p>
+        </div>
+        <div class="row question-boxes justify-content-evenly">
+          <div class="col-sm assignment-basics-box">
+            <h4 class="step-question">What are the individual tasks that students must do?</h4>
+            <p class="exemplar-text special-spacing"><em>e.g. Initiate a therapeutic relationship with a client; use social work practice skills; etc.</em></p>
+            <hr>
+            <textarea name="individual-tasks" id="individualTasksText" cols="35" rows="13" class="textbox textbox-full"></textarea>
+          </div>
+          <div class="col-sm assignment-basics-box" id="middleBox">
+            <h4 class="step-question">What will students produce to demonstrate the skill?</h4>
+            <p class="exemplar-text special-spacing"><em>e.g. A video of themselves role-playing a client-social worker interaction</em></p>
+            <hr>
+            <textarea name="produce-skill" id="produceSkillText" cols="35" rows="13" class="textbox textbox-full"></textarea>
+          </div>
+          <div class="col-sm assignment-basics-box">
+            <h4 class="step-question">What details, info, or parameters do the students need?</h4>
+            <p class="exemplar-text"><em>e.g. <br>- A partner to role-play with <br>- A case scenario for the client<br>- A way to meet up and record</em></p>
+            <hr>
+            <textarea name="parameters" id="parametersText" cols="35" rows="10" class="textbox textbox-full"></textarea>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="row button-forward">
+      <a class="btn button-next" id="stepThreeBtn" href="#stepThree"><i class="fa-solid fa-angle-down fa-5x"></i></a>
+    </div>
+
+<!--step three checks-->
+    <div class="row" id="stepThree">
+      <div class="container full-step mt-4">
+        <div class="row">
+          <h3 class="step-title text-center">Step Three: Check for Alignment and Measureability</h3>
+        </div>
+        <div class="row" id="firstCheck">
+          <div class="form-check">
+            <input type="checkbox" class="custom-check form-check-input" id="observableCheck">
+            <label for="observableCheck" class="custom-label form-check-label">Does the objective describe an observable (action-based) skill? Or does it focus too heavily on a "topic" of learning?</label>
+          </div>
+        </div>
+        <div class="row" id="secondCheck">
+          <div class="form-check">
+            <input type="checkbox" class="custom-check form-check-input" id="practiceCheck">
+            <label for="practiceCheck" class="custom-label form-check-label">Does your assessment require the student to practice the skill from the objective? Consider the different ways "practice" might be considered.</label>
+          </div>
+        </div>
+        <div class="row" id="thirdCheck">
+          <div class="form-check">
+            <input type="checkbox" class="custom-check form-check-input" id="realignCheck">
+            <label for="realignCheck" class="custom-label form-check-label">What revisions need to be made to the learning objective or the assignment basics section to make them better aligned with each other?</label>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="row button-forward">
+      <a class="btn button-next" id="stepFourBtn" href="#stepFour"><i class="fa-solid fa-angle-down fa-5x"></i></a>
+    </div>
+
+<!--step four fill in-->
+    <div class="row" id="stepFour">
+      <div class="container full-step mt-4">
+        <div class="row">
+          <h3 class="step-title text-center">Step Four: Learning Materials!</h3>
+          <p class="prompt-text">What are the learning materials (e.g. journal articles, videos, etc.) needed to understand the context/complete the assignment.</p>
+        </div>
+        <div class="row">
+          <div class="container textbox textbox-outline">
+            <textarea name="learning-materials" id="learningMaterialsText" cols="100" rows="15" class="textbox textbox-full"></textarea>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="row button-forward">
+      <a class="btn button-next" id="stepFiveBtn" href="#stepFive"><i class="fa-solid fa-angle-down fa-5x"></i></a>
+    </div>
+
+<!--step five fill in-->
+    <div class="row" id="stepFive">
+      <div class="container full-step mt-4">
+        <div class="row">
+          <h3 class="step-title text-center">Step Five: Put it all together!</h3>
+          <p class="prompt-text">This is where the Instructional Designer(s) and the Subject Matter Expert(s) can collaborate on the detailed instructions.</p>
+        </div>
+        <div class="row">
+          <div class="container textbox textbox-outline">
+            <textarea name="assessment-language" id="fullAssessmentText" cols="100" rows="20" class="textbox textbox-full"></textarea>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="row button-forward">
+      <a class="btn button-next" id="submitBtn" href="#finalStep" onclick="combineText()"><i class="fa-solid fa-check fa-5x"></i></a>
+    </div>
+
+<!--final print out-->
+    <div class="row" id="finalStep">
+      <div class="container full-step">
+        <div class="row">
+          <h3 class="step-title text-center">Drafted Assessment</h3>
+          <p class="prompt-text">This is all of the information that you've put in for creating the assessment language. Copy and paste as needed into the correct areas in your working blueprint document.</p>
+        </div>
+        <div class="container" id="output">
+          <div class="row" id="objectiveRow">
+            <h4 class="section-title">Learning Objective</h4>
+            <p id="learningObjectiveResult"></p>
+          </div>
+          <div class="row" id="basicsRow">
+            <h4 class="section-title">Assignment Basics</h4>
+            <ul>
+              <li id="individualTasksResult"></li>
+              <li id="skillDemonstrateResult"></li>
+              <li id="parametersResult"></li>
+            </ul>
+          </div>
+          <div class="row" id="materialsRow">
+            <h4 class="section-title">Learning Materials</h4>
+            <p id="learningMaterialsResult"></p>
+          </div>
+          <div class="row" id="instructionsRow">
+            <h4 class="section-title">Assessment Instructions</h4>
+            <p id="detailedInstructionsResult"></p>
+          </div>
+        </div>
+
+        <hr>
+        <div class="row mt-4">
+          <a class="btn button-next" id="restartBtn" href="#" onclick="resetEntries()"><i class="fa-solid fa-arrow-rotate-left fa-5x"></i></a>
+        </div>
+      </div>
+    </div>
+
+
+<!--Scripts used-->
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/cd74f3a459.js" crossorigin="anonymous"></script>
+  </body>
+</html>
