@@ -1,5 +1,7 @@
 * {
   font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  font-style: normal;
 }
 .question-boxes {
   display: flex;
@@ -158,4 +160,7 @@ textarea {
 #output li {
   font-size: 1.2rem;
   list-style-type: none;
+}
+#restartBtn {
+  font-size: 2.7rem;
 }
