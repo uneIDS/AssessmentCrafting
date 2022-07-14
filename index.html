@@ -74,7 +74,7 @@
           </div>
           <div class="col-sm assignment-basics-box">
             <h4 class="step-question">What details, info, or parameters do the students need?</h4>
-            <p class="exemplar-text"><em>e.g. <br>- A partner to role-play with <br>- A case scenario for the client<br>- A way to meet up and record</em></p>
+            <p class="exemplar-text"><em>e.g. <br>- A partner to role-play with <br>- A case scenario for the client<br>- Software required</em></p>
             <hr>
             <textarea name="parameters" id="parametersText" cols="35" rows="10" class="textbox textbox-full"></textarea>
           </div>
@@ -86,47 +86,50 @@
       <a class="btn button-next" id="stepThreeBtn" href="#stepThree"><i class="fa-solid fa-angle-down fa-5x"></i></a>
     </div>
 
-<!--step three checks-->
-    <div class="row" id="stepThree">
+    <!--step three fill in-->
+        <div class="row" id="stepThree">
+          <div class="container full-step mt-4">
+            <div class="row">
+              <h3 class="step-title text-center">Step Three: Learning Materials</h3>
+              <p class="prompt-text">What are the learning materials (e.g. journal articles, videos, etc.) needed to understand the context/complete the assignment.</p>
+            </div>
+            <div class="row">
+              <div class="container textbox textbox-outline">
+                <textarea name="learning-materials" id="learningMaterialsText" cols="100" rows="15" class="textbox textbox-full"></textarea>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="row button-forward">
+          <a class="btn button-next" id="stepFourBtn" href="#stepFour"><i class="fa-solid fa-angle-down fa-5x"></i></a>
+        </div>
+
+<!--step four checks-->
+    <div class="row" id="stepFour">
       <div class="container full-step mt-4">
         <div class="row">
-          <h3 class="step-title text-center">Step Three: Check for Alignment and Measureability</h3>
+          <h3 class="step-title text-center">Step Four: Check for Alignment and Measureability</h3>
+          <p class="prompt-text">Check off the boxes once reviewing the previous steps. </p>
         </div>
+
         <div class="row" id="firstCheck">
           <div class="form-check">
             <input type="checkbox" class="custom-check form-check-input" id="observableCheck">
-            <label for="observableCheck" class="custom-label form-check-label">Does the objective describe an observable (action-based) skill? Or does it focus too heavily on a "topic" of learning?</label>
+            <label for="observableCheck" class="custom-label form-check-label">The objective describes an observable (action-based) skill and does not focus too heavily on a "topic" of learning.</label>
           </div>
         </div>
         <div class="row" id="secondCheck">
           <div class="form-check">
             <input type="checkbox" class="custom-check form-check-input" id="practiceCheck">
-            <label for="practiceCheck" class="custom-label form-check-label">Does your assessment require the student to practice the skill from the objective? Consider the different ways "practice" might be considered.</label>
+            <label for="practiceCheck" class="custom-label form-check-label">The assessment requires the student to practice the skill from the objective.</label>
           </div>
         </div>
+
         <div class="row" id="thirdCheck">
           <div class="form-check">
             <input type="checkbox" class="custom-check form-check-input" id="realignCheck">
-            <label for="realignCheck" class="custom-label form-check-label">What revisions need to be made to the learning objective or the assignment basics section to make them better aligned with each other?</label>
-          </div>
-        </div>
-
-      </div>
-    </div>
-    <div class="row button-forward">
-      <a class="btn button-next" id="stepFourBtn" href="#stepFour"><i class="fa-solid fa-angle-down fa-5x"></i></a>
-    </div>
-
-<!--step four fill in-->
-    <div class="row" id="stepFour">
-      <div class="container full-step mt-4">
-        <div class="row">
-          <h3 class="step-title text-center">Step Four: Learning Materials!</h3>
-          <p class="prompt-text">What are the learning materials (e.g. journal articles, videos, etc.) needed to understand the context/complete the assignment.</p>
-        </div>
-        <div class="row">
-          <div class="container textbox textbox-outline">
-            <textarea name="learning-materials" id="learningMaterialsText" cols="100" rows="15" class="textbox textbox-full"></textarea>
+            <label for="realignCheck" class="custom-label form-check-label">The learning materials provide enough background for students to complete all task requirements.</label>
           </div>
         </div>
 
@@ -136,12 +139,14 @@
       <a class="btn button-next" id="stepFiveBtn" href="#stepFive"><i class="fa-solid fa-angle-down fa-5x"></i></a>
     </div>
 
+
+
 <!--step five fill in-->
     <div class="row" id="stepFive">
       <div class="container full-step mt-4">
         <div class="row">
           <h3 class="step-title text-center">Step Five: Put it all together!</h3>
-          <p class="prompt-text">This is where the Instructional Designer(s) and the Subject Matter Expert(s) can collaborate on the detailed instructions.</p>
+          <p class="prompt-text">Draft the detailed instructions using your answers from the previous sections. You can scroll up the page to review your work.</p>
         </div>
         <div class="row">
           <div class="container textbox textbox-outline">
@@ -187,7 +192,7 @@
 
         <hr>
         <div class="row mt-4">
-          <a class="btn button-next" id="restartBtn" href="#" onclick="resetEntries()"><i class="fa-solid fa-arrow-rotate-left fa-5x"></i></a>
+          <a class="btn button-next" id="restartBtn" href="#" onclick="resetEntries()">Clear form</a>
         </div>
       </div>
     </div>
